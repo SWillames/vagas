@@ -1,4 +1,4 @@
-package com.sw_software.vagas.modules.candidate;
+package com.sw_software.vagas.modules.candidate.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
@@ -20,13 +20,10 @@ public class CandidateEntity {
   @Column(nullable = false)
   private String name;
   @Pattern(regexp = "^(?!\\s*$).+", message = "O campo [username] não deve conter espaço")
-  @Column(nullable = false, unique = true)
   private String username;
   @Email(message = "O campo [email] deve conter um e-mail válido")
-  @Column(nullable = false, unique = true)
   private String email;
   @Length(min = 8, max = 16, message = "A senha deve conter entre 8 e 16 caractere")
-  @Column(nullable = false)
   private String password;
   private String description;
   private String curriculum;

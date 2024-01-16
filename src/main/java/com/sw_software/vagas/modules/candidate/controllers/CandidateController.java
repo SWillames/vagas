@@ -1,8 +1,6 @@
 package com.sw_software.vagas.modules.candidate.controllers;
 
-import com.sw_software.vagas.exceptions.UserFoundException;
-import com.sw_software.vagas.modules.candidate.CandidateEntity;
-import com.sw_software.vagas.modules.candidate.repository.CandidateRepository;
+import com.sw_software.vagas.modules.candidate.entity.CandidateEntity;
 import com.sw_software.vagas.modules.candidate.useCases.CreateCandidateUseCase;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

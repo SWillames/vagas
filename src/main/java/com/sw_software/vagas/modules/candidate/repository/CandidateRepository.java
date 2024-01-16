@@ -1,6 +1,6 @@
 package com.sw_software.vagas.modules.candidate.repository;
 
-import com.sw_software.vagas.modules.candidate.CandidateEntity;
+import com.sw_software.vagas.modules.candidate.entity.CandidateEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
