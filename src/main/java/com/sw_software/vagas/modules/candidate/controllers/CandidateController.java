@@ -1,5 +1,6 @@
 package com.sw_software.vagas.modules.candidate.controllers;
 
+
 import com.sw_software.vagas.modules.candidate.entity.CandidateEntity;
 import com.sw_software.vagas.modules.candidate.useCases.CreateCandidateUseCase;
 import jakarta.validation.Valid;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/candidate")
 public class CandidateController {
+
 
   @Autowired
   private CreateCandidateUseCase createCandidateUseCase;
